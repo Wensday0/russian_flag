@@ -1,27 +1,35 @@
-##This is simple program written for gas assembler that prints ascii russian flag.
+##Russian Flag ASCII Art
 
+This program prints a Russian flag in ASCII art. It's written in assembly language and can be compiled using the GAS assembler.
 
-###For compiling run:
+###Compiling:
+```bash
+as russian_flag.s -o russian_flag.o; ld russian_flag.o -o russian_flag; rm russian_flag.o
+```
+###Installing:
+You can install this program by copying it to `/bin` directory:
 
- as russian_flag.s -o russian_flag.o; ld russian_flag.o -o russian_flag; rm russian_flag.o
+```bash
+cp russian_flag /bin/
+```
 
-###For instalation copy "russian_flag" to "/bin":
+Alternatively, you can use the `make` command:
 
- cp russian_flag /bin
+```bash
+make && make install
+```
 
-###Or install by make:
+###Uninstalling:
+If you want to remove the program from `/bin`, you can do so using:
 
- make
- make install
+```bash
+rm /bin/russian_flag
+```
 
+Alternatively, you can use the `make` command again:
 
-###For uninstallation just remove "russian_flag" from "/bin":
+```bash
+make uninstall
+```
 
- rm /bin/russian_flag
-
-###Or uninstall by make:
-
- make uninstall
-
-
-#WARNING: It's assembly code ONLY for linux x86_64
+# Warning: This is assembly code ONLY for Linux x86_64. It will not work on other platforms.
