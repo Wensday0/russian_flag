@@ -1,20 +1,20 @@
-##Russian Flag ASCII Art
+## Russian Flag ASCII Art
 
-This program prints a Russian flag in ASCII art. It's written in assembly language and can be compiled using the GAS assembler.
+This program prints a Russian flag in ASCII art. It's written in assembly language.
 
-###Compiling:
+### Compiling:
 
 ```bash
 make
 ```
 
-###Installing:
+### Installing:
 
 ```bash
 make install
 ```
 
-###Uninstalling:
+### Uninstalling:
 
 ```bash
 make uninstall
