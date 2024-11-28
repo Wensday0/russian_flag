@@ -1,10 +1,14 @@
-all: clean compile
+all: compile clear
 
-clean:
-	rm russian_flag
-compile:
+compile: build link
+
+build:
 	as russian_flag.s -o russian_flag.o
+
+link:
 	ld russian_flag.o -o russian_flag
+
+clear:
 	rm russian_flag.o
 
 install:
